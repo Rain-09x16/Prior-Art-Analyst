@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+DOCKER.md
+AI_ML_*.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files (handled in individual services)
+.env
+.env.local
+.env.*.local
+
+# CI/CD
+.github
+
+# Node modules (handled in frontend)
+**/node_modules
+
+# Python cache (handled in backend)
+**/__pycache__
+**/*.pyc

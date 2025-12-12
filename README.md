@@ -93,19 +93,42 @@ Prior-AI/
 
 ### Prerequisites
 
-- Node.js 18+
-- Python 3.11+
+- **Option A (Docker)**: Docker Engine 20.10+ and Docker Compose 2.0+
+- **Option B (Manual)**: Node.js 18+, Python 3.11+
 - Clerk Account (Auth)
 - IBM watsonx Account (AI Features)
 
-### 1. Clone & Install
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/prior-ai.git
 cd prior-ai
 ```
 
-### 2. Backend Setup
+### 2a. Docker Setup (Recommended) 🐳
+
+```bash
+# Copy and configure environment
+cp .env.example .env
+# Edit .env with your API keys
+
+# Start all services
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+```
+
+**Services will be available at:**
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
+- API Docs: http://localhost:8000/docs
+
+For detailed Docker instructions, see [DOCKER.md](DOCKER.md).
+
+### 2b. Manual Setup
+
+#### Backend Setup
 
 ```bash
 cd backend
@@ -121,7 +144,7 @@ uvicorn app.main:app --reload
 ```
 API available at: http://localhost:8000/docs
 
-### 3. Frontend Setup
+#### Frontend Setup
 
 ```bash
 cd frontend

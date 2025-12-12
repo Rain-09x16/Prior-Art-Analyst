@@ -1,0 +1,60 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Database
+*.db
+*.db-journal
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Alembic
+alembic.ini
+
+# Uploads (will be mounted as volume)
+uploads/
+
+# Documentation
+*.md
+README.md
+ORCHESTRATE_*.md
+AI_ML_*.md
+
+# Training data
+training_data/
+
+# Tests
+tests/
